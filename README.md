@@ -19,9 +19,9 @@ Password: admin
 
 # Urls
 ```
-Wildfly 10 -> localhost:8080
-Keycloak -> localhost:8080/auth
+Wildfly 10 -> localhost:<port>
+Keycloak -> localhost:<port>/auth
 ```
 
-# Source
-The source is available on [GitHub](https://github.com/celsoagra/keycloak).
+# Docker
+The source is available on [Docker Hub](https://hub.docker.com/r/celsoagra/keycloak/).
