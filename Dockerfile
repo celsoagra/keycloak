@@ -13,9 +13,9 @@ RUN apt-get update && \
     apt-get install -y oracle-java8-installer && \
     apt-get clean
 
-RUN curl https://downloads.jboss.org/keycloak/2.3.0.Final/keycloak-2.3.0.Final.zip -o keycloak-2.3.0.Final.zip
-RUN unzip keycloak-2.3.0.Final.zip
-RUN rm keycloak-2.3.0.Final.zip
-RUN ./keycloak-2.3.0.Final/bin/add-user-keycloak.sh -u admin -p admin
-CMD cd keycloak-2.3.0.Final && ./bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0 -c standalone.xml 
+RUN curl https://downloads.jboss.org/keycloak/3.0.0.Final/keycloak-3.0.0.Final.zip -o keycloak-3.0.0.Final.zip
+RUN unzip keycloak-3.0.0.Final.zip
+RUN rm keycloak-3.0.0.Final.zip
+RUN ./keycloak-3.0.0.Final/bin/add-user-keycloak.sh -u admin -p admin
+CMD cd keycloak-3.0.0.Final && ./bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0 -c standalone.xml 
 EXPOSE 8080
